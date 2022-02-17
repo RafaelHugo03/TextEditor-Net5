@@ -27,7 +27,7 @@ namespace TextEditor
         static void Open()
         {
             Console.Clear();
-            Console.WriteLine("Wich file path? ");
+            Console.WriteLine("Which file path? ");
             var path = Console.ReadLine();
 
             using (var file = new StreamReader(path))
@@ -42,7 +42,7 @@ namespace TextEditor
         static void Create()
         {
             Console.Clear();
-            Console.WriteLine("type your text below (ESC para sair)");
+            Console.WriteLine("type your text below (ESC for exit)");
             Console.WriteLine("--------------");
 
             string text = "";
@@ -59,7 +59,7 @@ namespace TextEditor
         static void ToSave(string text)
         {
             Console.Clear();
-            Console.WriteLine("which path to save the file? ");
+            Console.WriteLine("Which path to save the file? ");
             var path = Console.ReadLine();
 
             using (var file = new StreamWriter(path))
