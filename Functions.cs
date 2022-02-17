@@ -11,7 +11,7 @@ namespace TextEditor
             Console.WriteLine("Welcome to the text editor");
             Console.WriteLine("1 - Open the file");
             Console.WriteLine("2 - Create new file");
-            Console.WriteLine("0 - Sair");
+            Console.WriteLine("0 - Exit");
             Console.Write("Exit, Open or Create? ");
 
             var option = short.Parse(Console.ReadLine());
@@ -35,6 +35,9 @@ namespace TextEditor
                 string text = file.ReadToEnd();
                 Console.WriteLine(text);
             }
+            Console.WriteLine();
+            Console.ReadKey();
+            Menu();
         }
         static void Create()
         {
